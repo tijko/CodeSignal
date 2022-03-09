@@ -1,0 +1,2 @@
+# CodeSignal
+Small algorithmic problems
