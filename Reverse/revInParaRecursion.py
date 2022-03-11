@@ -11,11 +11,10 @@ def recur(base, cnt, new, subs):
             subs[-1] += rev
         else:
             new += rev
+    elif cnt:
+        subs[-1] += base[0]
     else:
-        if cnt:
-            subs[-1] += base[0]
-        else:
-            new += base[0]
+        new += base[0]
     return recur(base[1:], cnt, new, subs)
 
 def solution(string):
