@@ -25,11 +25,14 @@ def solution(seq):
 
 
 if __name__ == '__main__':
-    #t = [3,5,67,98,3]
-    #t = [1,2,1,2]
-    #t = [123,-17,-5,1,2,3,12,43,45]
-    t = [1,2,3,4,99,5,6]
-    if solution(t):
-        print('True')
-    else:
-        print('False')
+    tests = [
+             [3,5,67,98,3],
+             [1,2,1,2],
+             [123,-17,-5,1,2,3,12,43,45],
+             [1,2,3,4,99,5,6]
+            ]
+    for test in tests:
+        if solution(test):
+            print('True')
+        else:
+            print('False')
